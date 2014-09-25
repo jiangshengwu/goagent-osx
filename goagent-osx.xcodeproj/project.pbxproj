@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EEDF9F5C19D439F30074908A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDF9F5B19D439F30074908A /* main.m */; };
+		EEDF9F5F19D439F30074908A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDF9F5E19D439F30074908A /* AppDelegate.m */; };
+		EEDF9F6119D439F30074908A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDF9F6019D439F30074908A /* Images.xcassets */; };
+		EEDF9F6419D439F30074908A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEDF9F6219D439F30074908A /* MainMenu.xib */; };
+		EEDF9F7019D439F30074908A /* goagent_osxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDF9F6F19D439F30074908A /* goagent_osxTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEDF9F6A19D439F30074908A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEDF9F4E19D439F30074908A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEDF9F5519D439F30074908A;
+			remoteInfo = "goagent-osx";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EEDF9F5619D439F30074908A /* goagent-osx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "goagent-osx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEDF9F5A19D439F30074908A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEDF9F5B19D439F30074908A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EEDF9F5D19D439F30074908A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EEDF9F5E19D439F30074908A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EEDF9F6019D439F30074908A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EEDF9F6319D439F30074908A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		EEDF9F6919D439F30074908A /* goagent-osxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "goagent-osxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEDF9F6E19D439F30074908A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEDF9F6F19D439F30074908A /* goagent_osxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = goagent_osxTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEDF9F5319D439F30074908A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEDF9F6619D439F30074908A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EEDF9F4D19D439F30074908A = {
+			isa = PBXGroup;
+			children = (
+				EEDF9F5819D439F30074908A /* goagent-osx */,
+				EEDF9F6C19D439F30074908A /* goagent-osxTests */,
+				EEDF9F5719D439F30074908A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEDF9F5719D439F30074908A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF9F5619D439F30074908A /* goagent-osx.app */,
+				EEDF9F6919D439F30074908A /* goagent-osxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEDF9F5819D439F30074908A /* goagent-osx */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF9F5D19D439F30074908A /* AppDelegate.h */,
+				EEDF9F5E19D439F30074908A /* AppDelegate.m */,
+				EEDF9F6019D439F30074908A /* Images.xcassets */,
+				EEDF9F6219D439F30074908A /* MainMenu.xib */,
+				EEDF9F5919D439F30074908A /* Supporting Files */,
+			);
+			path = "goagent-osx";
+			sourceTree = "<group>";
+		};
+		EEDF9F5919D439F30074908A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF9F5A19D439F30074908A /* Info.plist */,
+				EEDF9F5B19D439F30074908A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EEDF9F6C19D439F30074908A /* goagent-osxTests */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF9F6F19D439F30074908A /* goagent_osxTests.m */,
+				EEDF9F6D19D439F30074908A /* Supporting Files */,
+			);
+			path = "goagent-osxTests";
+			sourceTree = "<group>";
+		};
+		EEDF9F6D19D439F30074908A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF9F6E19D439F30074908A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEDF9F5519D439F30074908A /* goagent-osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEDF9F7319D439F30074908A /* Build configuration list for PBXNativeTarget "goagent-osx" */;
+			buildPhases = (
+				EEDF9F5219D439F30074908A /* Sources */,
+				EEDF9F5319D439F30074908A /* Frameworks */,
+				EEDF9F5419D439F30074908A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "goagent-osx";
+			productName = "goagent-osx";
+			productReference = EEDF9F5619D439F30074908A /* goagent-osx.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEDF9F6819D439F30074908A /* goagent-osxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEDF9F7619D439F30074908A /* Build configuration list for PBXNativeTarget "goagent-osxTests" */;
+			buildPhases = (
+				EEDF9F6519D439F30074908A /* Sources */,
+				EEDF9F6619D439F30074908A /* Frameworks */,
+				EEDF9F6719D439F30074908A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEDF9F6B19D439F30074908A /* PBXTargetDependency */,
+			);
+			name = "goagent-osxTests";
+			productName = "goagent-osxTests";
+			productReference = EEDF9F6919D439F30074908A /* goagent-osxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEDF9F4E19D439F30074908A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Shengwu Jiang";
+				TargetAttributes = {
+					EEDF9F5519D439F30074908A = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					EEDF9F6819D439F30074908A = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = EEDF9F5519D439F30074908A;
+					};
+				};
+			};
+			buildConfigurationList = EEDF9F5119D439F30074908A /* Build configuration list for PBXProject "goagent-osx" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEDF9F4D19D439F30074908A;
+			productRefGroup = EEDF9F5719D439F30074908A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEDF9F5519D439F30074908A /* goagent-osx */,
+				EEDF9F6819D439F30074908A /* goagent-osxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEDF9F5419D439F30074908A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEDF9F6119D439F30074908A /* Images.xcassets in Resources */,
+				EEDF9F6419D439F30074908A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEDF9F6719D439F30074908A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEDF9F5219D439F30074908A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEDF9F5F19D439F30074908A /* AppDelegate.m in Sources */,
+				EEDF9F5C19D439F30074908A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEDF9F6519D439F30074908A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEDF9F7019D439F30074908A /* goagent_osxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEDF9F6B19D439F30074908A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEDF9F5519D439F30074908A /* goagent-osx */;
+			targetProxy = EEDF9F6A19D439F30074908A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EEDF9F6219D439F30074908A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEDF9F6319D439F30074908A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEDF9F7119D439F30074908A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EEDF9F7219D439F30074908A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EEDF9F7419D439F30074908A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "goagent-osx/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EEDF9F7519D439F30074908A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "goagent-osx/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EEDF9F7719D439F30074908A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "goagent-osxTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/goagent-osx.app/Contents/MacOS/goagent-osx";
+			};
+			name = Debug;
+		};
+		EEDF9F7819D439F30074908A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "goagent-osxTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/goagent-osx.app/Contents/MacOS/goagent-osx";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEDF9F5119D439F30074908A /* Build configuration list for PBXProject "goagent-osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEDF9F7119D439F30074908A /* Debug */,
+				EEDF9F7219D439F30074908A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEDF9F7319D439F30074908A /* Build configuration list for PBXNativeTarget "goagent-osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEDF9F7419D439F30074908A /* Debug */,
+				EEDF9F7519D439F30074908A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EEDF9F7619D439F30074908A /* Build configuration list for PBXNativeTarget "goagent-osxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEDF9F7719D439F30074908A /* Debug */,
+				EEDF9F7819D439F30074908A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEDF9F4E19D439F30074908A /* Project object */;
+}
