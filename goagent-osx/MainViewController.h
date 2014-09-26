@@ -15,6 +15,10 @@
 @property (strong) IBOutlet NSTextView *textView;
 @property (strong) IBOutlet NSButton *startButton;
 @property (strong) IBOutlet NSButton *stopButton;
+@property (strong) IBOutlet NSButton *autoStartCheckbox;
+@property (strong) IBOutlet NSButton *autoScrollCheckbox;
+@property (strong) IBOutlet NSTextField *warningLabel;
+@property (strong) IBOutlet NSButton *killButton;
 
 /**
  * NSTask

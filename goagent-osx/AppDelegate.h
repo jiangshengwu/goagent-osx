@@ -10,6 +10,13 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+/// User config key
+extern NSString * const UserConfigRunTimes;
+extern NSString * const UserConfigAutoStart;
+extern NSString * const UserConfigAutoScroll;
+
++ (AppDelegate *)app;
 
 @end
+
 

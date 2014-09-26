@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EEABFD4B19D59CB600E56669 /* script.sh in Resources */ = {isa = PBXBuildFile; fileRef = EEABFD4A19D59CB600E56669 /* script.sh */; };
+		EED6909319D4AE4F00E9240E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EED6909219D4AE4F00E9240E /* README.md */; };
 		EEDF9F5C19D439F30074908A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDF9F5B19D439F30074908A /* main.m */; };
 		EEDF9F5F19D439F30074908A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDF9F5E19D439F30074908A /* AppDelegate.m */; };
 		EEDF9F6119D439F30074908A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDF9F6019D439F30074908A /* Images.xcassets */; };
@@ -15,7 +17,6 @@
 		EEDF9F7C19D43AA80074908A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDF9F7A19D43AA80074908A /* MainViewController.m */; };
 		EEDF9F7D19D43AA80074908A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEDF9F7B19D43AA80074908A /* MainViewController.xib */; };
 		EEDF9F7F19D448FD0074908A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEDF9F7E19D448FD0074908A /* Security.framework */; };
-		EEDF9F8619D44FD10074908A /* startup.sh in Resources */ = {isa = PBXBuildFile; fileRef = EEDF9F8419D44FC40074908A /* startup.sh */; };
 		EEDF9F8819D45AFA0074908A /* PrefixHeader.pch in Sources */ = {isa = PBXBuildFile; fileRef = EEDF9F8719D45ABC0074908A /* PrefixHeader.pch */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EEABFD4A19D59CB600E56669 /* script.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = script.sh; path = "goagent-osx/script.sh"; sourceTree = "<group>"; };
+		EED6909219D4AE4F00E9240E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EEDF9F5619D439F30074908A /* goagent-osx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "goagent-osx.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEDF9F5A19D439F30074908A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEDF9F5B19D439F30074908A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -38,13 +41,11 @@
 		EEDF9F6019D439F30074908A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "goagent-osx/Images.xcassets"; sourceTree = "<group>"; };
 		EEDF9F6319D439F30074908A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		EEDF9F6919D439F30074908A /* goagent-osxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "goagent-osxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EEDF9F6E19D439F30074908A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEDF9F6F19D439F30074908A /* goagent_osxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = goagent_osxTests.m; sourceTree = "<group>"; };
 		EEDF9F7919D43AA80074908A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = "goagent-osx/MainViewController.h"; sourceTree = "<group>"; };
 		EEDF9F7A19D43AA80074908A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = "goagent-osx/MainViewController.m"; sourceTree = "<group>"; };
 		EEDF9F7B19D43AA80074908A /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = "goagent-osx/MainViewController.xib"; sourceTree = "<group>"; };
 		EEDF9F7E19D448FD0074908A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		EEDF9F8419D44FC40074908A /* startup.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = startup.sh; path = "goagent-osx/startup.sh"; sourceTree = "<group>"; };
 		EEDF9F8719D45ABC0074908A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,9 +71,9 @@
 		EEDF9F4D19D439F30074908A = {
 			isa = PBXGroup;
 			children = (
+				EED6909219D4AE4F00E9240E /* README.md */,
 				EEDF9F8219D44EED0074908A /* goagent-osx */,
 				EEDF9F6C19D439F30074908A /* goagent-osxTests */,
-				EEDF9F6D19D439F30074908A /* Supporting Files */,
 				EEDF9F8019D4490A0074908A /* Framework */,
 				EEDF9F5719D439F30074908A /* Products */,
 			);
@@ -106,15 +107,6 @@
 			path = "goagent-osxTests";
 			sourceTree = "<group>";
 		};
-		EEDF9F6D19D439F30074908A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				EEDF9F6E19D439F30074908A /* Info.plist */,
-			);
-			name = "Supporting Files";
-			path = "goagent-osxTests";
-			sourceTree = "<group>";
-		};
 		EEDF9F8019D4490A0074908A /* Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +124,7 @@
 				EEDF9F7919D43AA80074908A /* MainViewController.h */,
 				EEDF9F7A19D43AA80074908A /* MainViewController.m */,
 				EEDF9F7B19D43AA80074908A /* MainViewController.xib */,
-				EEDF9F8419D44FC40074908A /* startup.sh */,
+				EEABFD4A19D59CB600E56669 /* script.sh */,
 				EEDF9F6019D439F30074908A /* Images.xcassets */,
 				EEDF9F5919D439F30074908A /* Supporting Files */,
 			);
@@ -219,7 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEDF9F8619D44FD10074908A /* startup.sh in Resources */,
+				EEABFD4B19D59CB600E56669 /* script.sh in Resources */,
 				EEDF9F6119D439F30074908A /* Images.xcassets in Resources */,
 				EEDF9F7D19D43AA80074908A /* MainViewController.xib in Resources */,
 				EEDF9F6419D439F30074908A /* MainMenu.xib in Resources */,
@@ -242,6 +234,7 @@
 			files = (
 				EEDF9F8819D45AFA0074908A /* PrefixHeader.pch in Sources */,
 				EEDF9F5F19D439F30074908A /* AppDelegate.m in Sources */,
+				EED6909319D4AE4F00E9240E /* README.md in Sources */,
 				EEDF9F7C19D43AA80074908A /* MainViewController.m in Sources */,
 				EEDF9F5C19D439F30074908A /* main.m in Sources */,
 			);

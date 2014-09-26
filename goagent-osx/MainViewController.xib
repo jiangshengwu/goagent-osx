@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment defaultVersion="1070" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6245"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainViewController">
             <connections>
+                <outlet property="autoScrollCheckbox" destination="EZk-pv-k3K" id="6dJ-5O-WgN"/>
+                <outlet property="autoStartCheckbox" destination="hgk-s6-9xE" id="fkZ-vb-nMq"/>
                 <outlet property="clipView" destination="k7I-dD-mW9" id="4T9-l7-cI1"/>
+                <outlet property="killButton" destination="Nr8-P9-dDm" id="Hzp-ir-Y8A"/>
                 <outlet property="outputView" destination="vjq-l1-VPx" id="GSc-3g-2Bq"/>
                 <outlet property="scrollView" destination="vjq-l1-VPx" id="rd4-Ru-RL8"/>
                 <outlet property="startButton" destination="GVz-oU-IGG" id="pHi-bi-LzA"/>
                 <outlet property="stopButton" destination="Tlp-5J-KuU" id="Z7z-0y-1NV"/>
                 <outlet property="textView" destination="Zdo-JM-oLt" id="VBX-pk-3pa"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="warningLabel" destination="GEb-Sk-J2g" id="wAe-tH-DEc"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -28,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView editable="NO" importsGraphics="NO" findStyle="panel" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" id="Zdo-JM-oLt">
-                                <rect key="frame" x="0.0" y="0.0" width="223" height="398"/>
+                                <rect key="frame" x="0.0" y="0.0" width="223" height="478"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -51,11 +56,11 @@
                     </scroller>
                 </scrollView>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GVz-oU-IGG">
-                    <rect key="frame" x="20" y="516" width="116" height="25"/>
+                    <rect key="frame" x="10" y="516" width="80" height="25"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="116" id="Ti8-HD-v15"/>
+                        <constraint firstAttribute="width" constant="80" id="Ti8-HD-v15"/>
                     </constraints>
-                    <buttonCell key="cell" type="roundTextured" title="Start" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KRG-hp-vH4">
+                    <buttonCell key="cell" type="roundTextured" title="Start" bezelStyle="texturedRounded" alignment="center" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KRG-hp-vH4">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" size="13" name="STHeitiSC-Light"/>
                     </buttonCell>
@@ -64,11 +69,11 @@
                     </connections>
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Tlp-5J-KuU">
-                    <rect key="frame" x="165" y="516" width="116" height="25"/>
+                    <rect key="frame" x="109" y="516" width="80" height="25"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="116" id="eQG-Oq-PKw"/>
+                        <constraint firstAttribute="width" constant="80" id="eQG-Oq-PKw"/>
                     </constraints>
-                    <buttonCell key="cell" type="roundTextured" title="Stop" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wk2-bV-L5d">
+                    <buttonCell key="cell" type="roundTextured" title="Stop" bezelStyle="texturedRounded" alignment="center" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wk2-bV-L5d">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" size="13" name="STHeitiSC-Light"/>
                     </buttonCell>
@@ -76,18 +81,76 @@
                         <action selector="stopClick:" target="-2" id="UaF-iX-2KV"/>
                     </connections>
                 </button>
+                <button hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Nr8-P9-dDm">
+                    <rect key="frame" x="750" y="516" width="38" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="38" id="hen-2I-gks"/>
+                    </constraints>
+                    <buttonCell key="cell" type="roundTextured" title="Kill" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cHs-C1-ArD">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name="STHeitiSC-Light"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="killClick:" target="-2" id="E5D-JP-Zef"/>
+                    </connections>
+                </button>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="hgk-s6-9xE">
+                    <rect key="frame" x="211" y="520" width="100" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="96" id="IKw-u6-8xW"/>
+                    </constraints>
+                    <buttonCell key="cell" type="check" title="Auto Start" bezelStyle="regularSquare" imagePosition="left" inset="2" id="9Yu-cE-4Fo">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" size="13" name="STHeitiSC-Medium"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="autoStartChange:" target="-2" id="dkP-PI-sYy"/>
+                    </connections>
+                </button>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="EZk-pv-k3K">
+                    <rect key="frame" x="312" y="520" width="100" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="96" id="bm2-nJ-Sal"/>
+                    </constraints>
+                    <buttonCell key="cell" type="check" title="Auto Scroll" bezelStyle="regularSquare" imagePosition="left" inset="2" id="xgg-ro-Ed0">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" size="13" name="STHeitiSC-Medium"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="autoScrollChange:" target="-2" id="zzB-WW-Pcg"/>
+                    </connections>
+                </button>
+                <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GEb-Sk-J2g">
+                    <rect key="frame" x="575" y="521" width="180" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="176" id="RYd-zA-bDB"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="hoP-pS-hpW">
+                        <font key="font" size="13" name="STHeitiSC-Medium"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
             <constraints>
                 <constraint firstItem="Tlp-5J-KuU" firstAttribute="baseline" secondItem="GVz-oU-IGG" secondAttribute="baseline" id="1b2-rS-Oe5"/>
-                <constraint firstItem="GVz-oU-IGG" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="4Xe-zB-02e"/>
+                <constraint firstAttribute="trailing" secondItem="GEb-Sk-J2g" secondAttribute="trailing" constant="47" id="2nU-gh-EXs"/>
+                <constraint firstItem="EZk-pv-k3K" firstAttribute="centerY" secondItem="Nr8-P9-dDm" secondAttribute="centerY" id="46C-zf-Dzg"/>
+                <constraint firstItem="GVz-oU-IGG" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="4Xe-zB-02e"/>
                 <constraint firstAttribute="trailing" secondItem="vjq-l1-VPx" secondAttribute="trailing" constant="10" id="6Mn-gX-ruA"/>
                 <constraint firstItem="vjq-l1-VPx" firstAttribute="top" secondItem="Tlp-5J-KuU" secondAttribute="bottom" constant="28" id="7R8-5E-RnF"/>
-                <constraint firstItem="Tlp-5J-KuU" firstAttribute="leading" secondItem="GVz-oU-IGG" secondAttribute="trailing" constant="29" id="G9k-7B-Bcc"/>
+                <constraint firstAttribute="trailing" secondItem="Nr8-P9-dDm" secondAttribute="trailing" constant="12" id="Ceu-vF-NGT"/>
+                <constraint firstItem="Tlp-5J-KuU" firstAttribute="leading" secondItem="GVz-oU-IGG" secondAttribute="trailing" constant="19" id="G9k-7B-Bcc"/>
                 <constraint firstAttribute="bottom" secondItem="vjq-l1-VPx" secondAttribute="bottom" constant="10" id="Hec-UU-VNO"/>
+                <constraint firstItem="EZk-pv-k3K" firstAttribute="baseline" secondItem="GEb-Sk-J2g" secondAttribute="baseline" constant="3" id="I4T-if-mH1"/>
                 <constraint firstItem="vjq-l1-VPx" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="Qqu-qh-TYp"/>
                 <constraint firstItem="GVz-oU-IGG" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" symbolic="YES" id="gyS-nN-Hux"/>
+                <constraint firstItem="hgk-s6-9xE" firstAttribute="leading" secondItem="Tlp-5J-KuU" secondAttribute="trailing" constant="24" id="mLf-cG-e7y"/>
+                <constraint firstItem="hgk-s6-9xE" firstAttribute="centerY" secondItem="Tlp-5J-KuU" secondAttribute="centerY" id="rNh-XX-k8u"/>
+                <constraint firstItem="EZk-pv-k3K" firstAttribute="leading" secondItem="hgk-s6-9xE" secondAttribute="trailing" constant="5" id="sWH-ui-rhk"/>
+                <constraint firstItem="EZk-pv-k3K" firstAttribute="baseline" secondItem="hgk-s6-9xE" secondAttribute="baseline" id="wQ5-TA-xjH"/>
             </constraints>
-            <point key="canvasLocation" x="136.5" y="418"/>
+            <point key="canvasLocation" x="136" y="418"/>
         </customView>
     </objects>
 </document>

@@ -16,23 +16,33 @@
 
 @end
 
+NSString * const UserConfigRunTimes = @"run";
+NSString * const UserConfigAutoStart = @"start";
+NSString * const UserConfigAutoScroll = @"scroll";
+
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
-    
-    // 1. Create the master View Controller
+
     self.mainViewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
-    
-    // 2. Add the view controller to the Window's content view
     [self.window.contentView addSubview:self.mainViewController.view];
     self.mainViewController.view.frame = ((NSView *)self.window.contentView).bounds;
+    
+    // set window title
+    NSDictionary *dict = [[NSBundle mainBundle] infoDictionary];
+    NSString *version = [dict valueForKey:@"CFBundleShortVersionString"];
+    [self.window setTitle:[NSString stringWithFormat:@"GoAgent for OSX  %@", version]];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
     
     [self.mainViewController stopBreakWall];
+}
+
++ (AppDelegate *)app {
+    return (AppDelegate *)[NSApplication sharedApplication].delegate;
 }
 
 @end
