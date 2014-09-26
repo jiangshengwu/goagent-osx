@@ -9,4 +9,4 @@ This app just contains basic functions at the moment, still I think, it will pro
 
 **goagent-osx.app should be located in the folder of `goagent/local`.**
 
-![capture_20140926034650 2x](https://cloud.githubusercontent.com/assets/2188512/4411389/374957aa-44ee-11e4-8c1e-9090d2d79358.png)
+![qq20140926-1 2x](https://cloud.githubusercontent.com/assets/2188512/4422982/11f192ee-4591-11e4-8f48-0828990c5195.png)
