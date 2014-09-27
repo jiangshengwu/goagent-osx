@@ -3,7 +3,7 @@ goagent-osx
 
 *Sep 26, 2014*
 
-I want to do my bit for the *goagent* project which helps me a lot, though I'm new to cocoa development.
+I want to do my bit for the [**goagent**](https://github.com/goagent/goagent) project which helps me a lot, though I'm new to cocoa development.
 
 This app just contains basic functions at the moment, still I think, it will provides a convenient for those who are not experienced in terminal commands.
 
